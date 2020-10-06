@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewData["Title"] = "LoginActionResult";
+}
+
+<div class="panel panel-body col-md-4 col-xs-12" style="margin: 0 auto; text-align: center; background-color: whitesmoke; border-radius: 5px; box-shadow: 6px 6px 3px 0 gray;">
+    <div class="modal-body">
+        <div>
+            <img src="img/cloud-automation-logo.png" style="width: 172px; height: 112px; margin-bottom: 6px" />
+        </div>
+        <div style="text-align: center; font-weight: bold">
+            <span> ورود به سیستم ابری</span>
+        </div>
+        <hr style="height: 1px;background-color: gray" />
+        <div class="col-xs-12 col-md-12 alert" style="text-align: center; background-color: aqua; border-radius: 5px;">
+            <span>اتوماسیون اداری تحت وب سپهر</span>
+        </div>
+
+        <form asp-controller="Account" asp-action="LoginActionResult" method="post">
+
+            <!--نام کاربری-->
+            <div class="form-group col-xs-12 col-md-12">
+                <div class="input-group">
+
+                    <i class="fa fa-user-o" style="font-size: 25px; padding-top: 6px; padding-left: 1px; padding-right: 1px; margin-left: 0px; border: 1px solid #ced4da; border-radius: 0 5px 5px 0; "></i>
+                    <input type="text" class="form-control" autocomplete="off" style="text-align: center; font-weight: bold; border-radius: 5px 0 0 5px;" placeholder="نام کاربری" />
+                </div>
+                <span class="text-danger" style="font-weight: bold"></span>
+            </div>
+
+            <!--رمز عبور -->
+
+            <div class="form-group col-xs-12 col-md-12">
+                <div class="input-group">
+                    <i class="fa fa-user-secret" style="font-size: 25px; padding-top: 6px; padding-left: 1px; padding-right: 1px; margin-left: 0px; border: 1px solid #ced4da; border-radius: 0 5px 5px 0; "></i>
+
+                    <input type="password" class="form-control" autocomplete="off" style="text-align: center; font-weight: bold; border-radius: 5px 0 0 5px;" placeholder="رمز عبور "/>
+                </div>
+                <span class="text-danger" style="font-weight: bold"></span>
+            </div>
+
+            <!--دکمه ورود -->
+            <div class="form-group col-xs-12 ">
+                <div>
+                    <input type="submit" class="btn btn-primary center-block" value="ورود به سامانه" />
+                </div>
+                <div style="margin-top: 4px; font-size: 13px;">
+                    <a href="#">
+                        فراموشی رمز عبور
+                    </a>
+                </div>
+            </div>
+
+        </form>
+
+
+        <div style="border: 2px solid darkblue; border-radius: 6px; padding: 10px">
+            <span style="font-weight: bold;"> مالکیت حقوقی این سایت متعلق است به شرکت رایان گستر غرب اشکانیان ایجرود </span>
+            <br />
+            <span style="font-size : 14px">02188656565</span>
+        </div>
+
+    </div>
+</div>
+

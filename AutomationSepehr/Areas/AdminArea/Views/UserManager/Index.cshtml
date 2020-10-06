@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="content">
+    <div class="panel panel-heading" style="box-shadow: 3px 1px 1px 0 gray;border-radius:2px">
+        <span style="font-weight: bold">
+            <i class="glyphicon glyphicon-user"></i>
+            لیست کاربران سامانه
+        </span>
+    </div>
+    
+    <div>
+        <a class="btn customBottenGreen" asp-controller="UserManager" asp-action="AddUser" style="margin-bottom: 10px">
+            <i class="glyphicon glyphicon-plus"></i>
+            افزودن کاربر جدید
+        </a>
+    </div>
+    
+    <div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover" style="border-radius: 4px; box-shadow: 3px 1px 1px 0 gray;">
+                <thead>
+                    <tr>
+                        <td>ردیف</td>
+                        <td>نام</td>
+                        <td>فامیلی</td>
+                        <td>کد پرسنلی</td>
+                        <td>نام کاربری</td>
+                        <td>تصویر</td>
+                        <td>امضاء</td>
+                        <td>وضعیت کاربر</td>
+                        <td>عملیات</td>
+
+
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
